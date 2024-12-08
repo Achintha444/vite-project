@@ -11,8 +11,11 @@ function AppUsingEvents() {
 
     if (currentCircleRef) {
       currentCircleRef.style.backgroundColor = "red";
-      currentCircleRef.style.left = `${e.clientX}px`;
-      currentCircleRef.style.top = `${e.clientY}px`;
+      
+      setTimeout(() => {
+        currentCircleRef.style.left = `${e.clientX}px`;
+        currentCircleRef.style.top = `${e.clientY}px`;
+    }, 100)
     }
   }
 
